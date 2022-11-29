@@ -25,4 +25,3 @@ window.ctx = canvas.getContext("2d");
 
 window.gameView = new GameView(window.ctx)
 window.gameView.start()
-

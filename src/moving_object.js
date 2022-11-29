@@ -1,3 +1,5 @@
+import Util from "./utils.js"
+
 // function MovingObject(options) {
 //     this.pos = options['pos'];
 //     this.vel = options['vel'];
@@ -35,9 +37,9 @@ export default class MovingObject{
   }
 
   move(){
-    this.vel = Util.scale()
-    this.pos[0] += this.vel[0];
-    this.pos[1] += this.vel[1];
+    const newVel = Util.scale(this.vel, 2);
+    this.pos[0] += newVel[0];
+    this.pos[1] += newVel[1];
   }
 
 

@@ -40,6 +40,6 @@ export default class Game {
   }
 }
 
-Game.DIM_X = 500;
-Game.DIM_Y = 500;
+Game.DIM_X = 600;
+Game.DIM_Y = 600;
 Game.NUM_ASTEROIDS = 10;
