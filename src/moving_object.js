@@ -1,5 +1,6 @@
 import Util from "./utils.js"
 
+
 // function MovingObject(options) {
 //     this.pos = options['pos'];
 //     this.vel = options['vel'];
@@ -25,6 +26,7 @@ export default class MovingObject{
     this.vel = options['vel'];
     this.radius = options['radius'];
     this.color = options['color'];
+    this.game = options['game'];
   }
 
   draw(){
@@ -37,9 +39,11 @@ export default class MovingObject{
   }
 
   move(){
+    // debugger
     const newVel = Util.scale(this.vel, 2);
     this.pos[0] += newVel[0];
     this.pos[1] += newVel[1];
+    this.pos = this.game.wrap(this.pos);
   }
 
 

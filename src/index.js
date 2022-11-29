@@ -1,7 +1,6 @@
 console.log("Webpack is Working");
 import MovingObject from "./moving_object.js";
 import Asteroid from "./asteroid.js";
-import Game from './game.js';
 import GameView from './game_view.js'
 
 window.Asteroid = Asteroid;

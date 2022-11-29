@@ -9,7 +9,7 @@ export default class Game {
   addAsteroids(){
     // debugger
     for (let i = 0; i < Game.NUM_ASTEROIDS; i++) {
-      this.asteroids.push(new Asteroid(this.randomPosition()));
+      this.asteroids.push(new Asteroid(this.randomPosition(), this));
     }
   }
 
@@ -30,13 +30,18 @@ export default class Game {
     for (const a of this.asteroids) {
       a.draw(ctx);
     }
-    console.log("draw")
   }
 
   moveObjects(ctx){
     for (const a of this.asteroids) {
       a.move(ctx);
     }
+  }
+
+  wrap(pos) {
+    pos[0] = pos[0]%Game.DIM_X;
+    pos[1] = pos[1]%Game.DIM_Y;
+    return [pos[0], pos[1]];
   }
 }
 

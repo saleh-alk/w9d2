@@ -9,8 +9,7 @@ export default class GameView {
   }
 
   start(){
-    setInterval(() => {this.game.draw(this.ctx)}, 100)
-    setInterval(() => {this.game.moveObjects(this.ctx)}, 100)
-    setInterval(()=> {console.log("test")}, 1000)
+    setInterval(() => {this.game.draw(this.ctx)}, 10)
+    setInterval(() => {this.game.moveObjects(this.ctx)}, 10)
   }
 }

@@ -2,12 +2,13 @@ import MovingObject from "./moving_object.js";
 import Util from "./utils.js"
 
 export default class Asteroid extends MovingObject {
-    constructor(pos){
+    constructor(pos, game){
         let options = {
             "pos": pos,
             "color": Asteroid.COLOR,
             "radius": Asteroid.RADIUS,
-            "vel": Util.randomVec(2)
+            "vel": Util.randomVec(2),
+            "game": game
         };
         super(options);
 
