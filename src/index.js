@@ -1,5 +1,9 @@
 console.log("Webpack is Working");
-const MovingObject = require("./moving_object.js");
+//const MovingObject = require("./moving_object.js");
+import MovingObject from "./moving_object.js";
+import Asteroid from "./asteroid.js";
+
+window.Asteroid = Asteroid;
 
 window.MovingObject = MovingObject;
 
@@ -8,3 +12,4 @@ window.MovingObject = MovingObject;
 
 window.canvas = document.getElementById("game-canvas");
 window.ctx = canvas.getContext("2d");
+
