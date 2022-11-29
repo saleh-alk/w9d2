@@ -15,8 +15,8 @@ export default class Asteroid extends MovingObject {
 
 }
 
-Asteroid.COLOR = "red";
+Asteroid.COLOR = "#FF0000";
 Asteroid.RADIUS = 20;
 
-let a = new Asteroid({pos: [30,30]});
+let a = new Asteroid([30,30]);
 console.log(JSON.stringify(a))

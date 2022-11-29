@@ -26,10 +26,11 @@ export default class MovingObject{
   }
 
   draw(){
+    // debugger
     ctx.beginPath();
     ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, false);
     ctx.lineWidth = 3;
-    ctx.strokestyel = '#FF0000';
+    ctx.strokeStyle = '#FF0000';
     ctx.stroke();
   }
 
