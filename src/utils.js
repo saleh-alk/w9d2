@@ -1,5 +1,3 @@
-const { util } = require("webpack");
-
 let Util = {
     inherits: function (childClass, parentClass) {
         function Surrogate() {};
@@ -37,5 +35,3 @@ export default Util;
 //         return [vec[0] * m, vec[1] * m];
 //     }
 // }
-
-
