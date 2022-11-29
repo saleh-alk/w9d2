@@ -30,6 +30,7 @@ export default class Game {
     for (const a of this.asteroids) {
       a.draw(ctx);
     }
+    console.log("draw")
   }
 
   moveObjects(ctx){

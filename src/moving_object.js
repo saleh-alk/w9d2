@@ -35,7 +35,9 @@ export default class MovingObject{
   }
 
   move(){
-    this.pos += this.vel;
+    this.vel = Util.scale()
+    this.pos[0] += this.vel[0];
+    this.pos[1] += this.vel[1];
   }
 
 

@@ -2,6 +2,7 @@ console.log("Webpack is Working");
 import MovingObject from "./moving_object.js";
 import Asteroid from "./asteroid.js";
 import Game from './game.js';
+import GameView from './game_view.js'
 
 window.Asteroid = Asteroid;
 window.MovingObject = MovingObject;
@@ -20,5 +21,8 @@ window.ctx = canvas.getContext("2d");
 //   radius: 5,
 //   color: "#00FF00"
 // });
-window.game = new Game();
+// window.game = new Game();
+
+window.gameView = new GameView(window.ctx)
+window.gameView.start()
 
